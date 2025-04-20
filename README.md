@@ -42,6 +42,10 @@ The following development dependencies are utilized within the project:
 - `typescript`: TypeScript compiler for the project.
 - `vscode-test`: Utilities for running integration tests on the extension.
 
+- You can now install dependencies with npm install
+  and compile the extension with npm run compile.
+  Then you can run and test the extension in VSCode
+
 These dependencies ensure that the extension works correctly with TypeScript and the VSCode API.
 
 ## Project Structure
