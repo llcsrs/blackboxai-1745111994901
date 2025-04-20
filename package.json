@@ -1,0 +1,37 @@
+{
+  "name": "readme-generator",
+  "displayName": "README Generator",
+  "description": "VSCode extension to scan classes and methods and generate a README file for the project",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:readme-generator.generateReadme"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "readme-generator.generateReadme",
+        "title": "Generate README from Classes and Methods"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.4.3",
+    "vscode-test": "^1.5.2"
+  }
+}
